@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: #c5ebd6;
+}
+main {
+    text-align: justify;
+    width: 80vw;
+    margin: auto;
+    background-color: azure;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
