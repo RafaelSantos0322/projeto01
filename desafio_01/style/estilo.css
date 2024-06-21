@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: Android;
+    src: url(../fontes/idroid.otf) format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
 * {
     margin: 0px;
     padding: 0px;
@@ -16,12 +22,31 @@ main {
     border-radius: 10px;
     
 }
+header{
+    text-align: center;
+    padding: 10px;
+    background-color: #03741b;
+    color: #c5ebd6;
+}
+header > h1 {
+    font-family: Android;
+
+}
+header > p {
+    color: hsl(0, 0%, 100%);
+}
+nav {
+    text-align: start;
+}
+nav > a {
+    padding: 7px;
+}
+nav > a:hover {
+    background-color: #12922e;
+    color: #c5ebd6;
+}
 aside {
     text-align: justify;
-    width: 80vw;
-    margin: auto;
-    background-color: azure;
-    padding: 10px;
-    border-radius: 10px;
+
     
 }
