@@ -30,48 +30,90 @@ body {
 header{
     text-align: center;
     padding: 10px;
-    background-color: var(--cor04);
+    background-image: linear-gradient(to bottom, var(--cor03), var(--cor05));
     color: #c5ebd6;
+    min-height: 150px;
 }
 header > h1 {
     /* Formatando usando variaveis */
     font-family: var(--fonte-destaque); 
     color: white;
-
+    padding-top: 40px;
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
 }
 header > p {
     color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.322);
 
 }
 nav {
     text-align: start;
     background-color: var(--cor05);
     padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.185);
 } 
 nav > a {
     padding: 7px;
     color: var(--cor00);
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
 }
 nav > a:hover {
-    background: linear-gradient(to right, var(--cor-degrade));
+    background-image: linear-gradient(to right, var(--cor03)65%, rgba(255, 255, 255, 0.705));
     color: var(--cor05);
     font-weight: bold;
+    border-radius: 2px;
+    text-decoration: underline;
+
+
 }
 main {
-    
     text-align: justify;
-    width: 80vw;
+    min-height: 270px;
+    max-width: 800px;
     margin: auto;
+    margin-bottom: 30px;
     background-color: azure;
-    padding: 10px;
-    border-radius: 10px;  
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.226);
+    border-bottom-left-radius: 10px;  
+    border-bottom-right-radius: 10px;  
+    
 }
-article > p {
-    text-indent: 20px;
+main p {
+    text-indent: 30px;
+    margin: 15px 0px;
+    text-align: justify;
+    line-height: 2em;
+    font-size: 1em;
 }
+main strong{
+    background-color: var(--cor02);
+    color: var(--cor04);
+}
+main a {
+    background-color: var(--cor01);
+    color: var(--cor05);
+    padding: 2px 6px;
+    font-weight: bold;
+}  
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor03);
+} 
 article > h1 {
     color: var(--cor05);
     font-family: var(--fonte-especial);
+    font-size: 1.5em;
 }
 aside {
     text-align: justify;
@@ -91,11 +133,12 @@ footer > p > a:hover {
     color: #c5ebd6;
 }
 h2 {
-    background: linear-gradient(to right, var(--cor03), var(--cor02), var( --cor00), rgb(207, 250, 241));
-    color: white;
+    background: linear-gradient(to right, var(--cor01), transparent);
+    color: var(--cor04);
     padding: 3px;
     font-family: var(--fonte-destaque);
     margin: 10px 1px;
+    font-size: 1.3em;
 }
 article > picture {
     display: flex;
@@ -103,4 +146,7 @@ article > picture {
 }
 img{
     width: 100%;
+}
+#img-bugdroid {
+    max-width: 350px;
 }
